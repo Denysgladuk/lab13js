@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Messages</title>
+    <script>
+        function showMessage(message) {
+            const messageParagraph = document.getElementById('message');
+            messageParagraph.textContent = message;
+        }
+    </script>
+</head>
+<body>
+    <button 
+        onclick="showMessage('I was pressed!')" 
+        onmouseover="showMessage('Mouse on me!')" 
+        onmouseout="showMessage('Mouse is not on me!')">Hover or Click Me!</button>
+    <p id="message"></p>
+    <a href="index5.html"">Слідуюче завдання</a>
+</body>
+</html>

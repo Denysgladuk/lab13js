@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Style</title>
+    <script>
+        function changeCSS() {
+            const text = document.getElementById('text');
+            text.style.color = 'orange';
+            text.style.fontSize = '20px';
+            text.style.fontFamily = 'Comic Sans MS';
+        }
+    </script>
+</head>
+<body>
+    <p id="text">I learning JavaScript events!</p>
+    <div>
+        <button onclick="changeCSS()">Change style!</button>
+    </div>
+    <a href="index2.html"">Слідуюче завдання</a>
+</body>
+</html>

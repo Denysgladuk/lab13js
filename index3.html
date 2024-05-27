@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Option</title>
+    <script>
+        function removeSelectedOption() {
+            const select = document.getElementById('dropdown');
+            select.remove(select.selectedIndex);
+        }
+    </script>
+</head>
+<body>
+    <select id="dropdown">
+        <option>Вася</option>
+        <option>Денис</option>
+        <option>Андрій</option>
+        <option>Саша</option>
+        <option>Ваня</option>
+    </select>
+    <button onclick="removeSelectedOption()">Видалити вибрану опцію</button>
+    <a href="index4.html"">Слідуюче завдання</a>
+</body>
+</html>

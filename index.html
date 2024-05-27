@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Manipulation</title>
+    <script>
+        let newWindow;
+
+        function openNewWindow() {
+            // Тут создається вікно
+            newWindow = window.open('', '', 'width=300,height=300');
+            
+            // Тут змінюється розміри через 2 сек
+            setTimeout(() => {
+                if (newWindow) {
+                    newWindow.resizeTo(500, 500);
+                }
+            }, 2000);
+            
+            // Тут вікно переміщується через 2 сек
+            setTimeout(() => {
+                if (newWindow) {
+                    newWindow.moveTo(200, 200);
+                }
+            }, 4000);
+            
+            // Тут закривається вікно
+            setTimeout(() => {
+                if (newWindow) {
+                    newWindow.close();
+                }
+            }, 6000);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="openNewWindow()">Open New Window</button>
+    <a href="index1.html"">Слідуюче завдання</a>
+</body>
+</html>

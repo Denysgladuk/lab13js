@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Events</title>
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="changeBackgroundColor('blue')">1 раз нажми</button>
+    <button ondblclick="changeBackgroundColor('pink')">2 раза нажми</button>
+    <button onmousedown="changeBackgroundColor('brown')" onmouseup="changeBackgroundColor('white')">Зажми</button>
+    <a href="#" onmouseover="changeBackgroundColor('yellow')" onmouseout="changeBackgroundColor('white')">Наведи щоби зробити сайт жовтим</a>
+    <a href="index3.html"">Слідуюче завдання</a>
+</body>
+</html>
